@@ -66,7 +66,7 @@ console.log(final);
 
 console.log(finalWithTip);
 
-/*object creation*/
+/*object creation
 
 var myDetails={
     firstName:'Harshitha',
@@ -87,3 +87,33 @@ shiva.firstName="deepthi";
 console.log(shiva);
 
 console.log("i am"+myDetails.calcAge(myDetails.dob)+" years old");
+
+//anonymousfunctions
+document.getElementById('btn').onclick=function(){
+    alert("YOU CLICKED THIS BUTTON");
+}
+*/
+//reference creation
+var but=document.getElementById('btn');
+but.addEventListener('mouseover',changemouseover);
+function changemouseover(){
+    this.style.background="red";
+}
+var but=document.getElementById('btn2');
+but.addEventListener('mouseover',changemouseover);
+function changemouseover(){
+    this.style.background="blue";
+}
+var but=document.getElementById('btn');
+but.addEventListener('mouseout',changemouseout);
+function changemouseout(){
+    this.style.background="blue";
+}
+
+var but=document.getElementById('btn2');
+but.addEventListener('mouseout',changemouseout);
+function changemouseout(){
+    this.style.background="red";
+}
+
+document.querySelector('#hId').textContent="HELLO";
